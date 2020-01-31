@@ -1,0 +1,58 @@
+﻿@page "{id:int}"
+@model DeleteMessageModel
+
+@{
+    ViewData["Title"] = "Delete Message";
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+
+}
+
+<div class="wrapper">
+    <partial name="../Dashboard/_ManageSideBar" />
+
+    <div class="main-panel">
+        <partial name="../Dashboard/_ManageNav2" />
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        
+                        <div class="alert alert-danger" role="alert">
+                            <p>
+
+                                <strong>Are you sure you want to delete the message?</strong>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Confirm deleting message</h4>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form id="delete-post" method="post" class="form-group">
+                                            <div asp-validation-summary="All" class="text-danger"></div>
+                                            <button class="btn btn-danger" type="submit">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <partial name="../Dashboard/_ManageFooter" />
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

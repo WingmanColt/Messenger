@@ -1,0 +1,98 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+<!--/ Nav /-->
+@if (SignInManager.IsSignedIn(User))
+{
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" asp-controller="Home" asp-action="Index">HireMe</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                    aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+
+                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll" href="~/Contestants/Create">Join Now</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll" asp-area="Identity" asp-page="/Account/Manage/Dashboard">My Profile</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button type="submit" class="btn btn-link nav-link">Logout</button>
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+}
+else
+{
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" asp-controller="Home" asp-action="Index">HireMe</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                    aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+}
+<!--/ Nav End /-->
+@*
+    <!-- Navbar content -->
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">My Profile</a>
+                </li>
+
+                <li>
+                    <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
+                </li>
+            </ul>
+        </form>
+    }
+    else
+    {
+        <ul class="nav navbar-nav navbar-right">
+            <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+            <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+        </ul>
+    }
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+*@

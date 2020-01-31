@@ -1,0 +1,69 @@
+﻿@page
+@model ResetAuthenticatorModel
+
+@{
+    ViewData["Title"] = "Reset authenticator key";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+}
+
+
+<div class="wrapper">
+    <partial name="../Dashboard/_ManageSideBar" />
+
+    <div class="main-panel">
+        <partial name="../Dashboard/_ManageNav2" />
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 ml-auto mr-auto">
+                                <div class="card">
+                                    <partial name="../Dashboard/_StatusMessage" for="StatusMessage" />
+
+                                    <div class="header text-center">
+                                        <h4 class="title">Two Factor Authentication</h4>
+
+                                        <br>
+                                    </div>
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <div class="alert alert-warning" role="alert">
+                                                    <p>
+                                                        <span class="fa fa-refresh" aria-hidden="true"></span>
+                                                        <strong>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</strong>
+                                                    </p>
+                                                    <p>
+                                                        This process disables 2FA until you verify your authenticator app.
+                                                        If you do not complete your authenticator app configuration you may lose access to your account.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <form id="reset-authenticator-form" method="post" class="form-group">
+                                                        <button id="reset-authenticator-button" class="btn btn-danger" type="submit">Reset authenticator key</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <partial name="../Dashboard/_ManageFooter" />
+
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,517 @@
+{
+  "FilePath": "c:\\Users\\iNexus\\Documents\\source\\repos\\HireMe\\HireMe\\HireMe.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "HireMe",
+  "Documents": [
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\_LayoutContestant_Profile.cshtml",
+      "TargetPath": "Views\\Contestants\\_LayoutContestant_Profile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\_Layout.cshtml",
+      "TargetPath": "Views\\Client\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\UserList.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\UserList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_RightSideBarPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_RightSideBarPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\_LayoutLight.cshtml",
+      "TargetPath": "Views\\Home\\_LayoutLight.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\Create.cshtml",
+      "TargetPath": "Views\\Contestants\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_FeaturesPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_FeaturesPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home2\\Privacy.cshtml",
+      "TargetPath": "Views\\Home2\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_FooterPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_FooterPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\AllCategories.cshtml",
+      "TargetPath": "Views\\Contestants\\AllCategories.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav2.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePost.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePost.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_PostsPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_PostsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_LayoutPanel.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutPanel.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_PostsPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_PostsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_FooterPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_FooterPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\Categories.cshtml",
+      "TargetPath": "Views\\Contestants\\Categories.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageSideBar.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageSideBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Jobs\\JobPost.cshtml",
+      "TargetPath": "Views\\Jobs\\JobPost.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\UpgradeToPro.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\UpgradeToPro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_SliderPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_SliderPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Jobs\\Create.cshtml",
+      "TargetPath": "Views\\Jobs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\Profile.cshtml",
+      "TargetPath": "Views\\Contestants\\Profile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_RightSideBarPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_RightSideBarPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Jobs\\Index.cshtml",
+      "TargetPath": "Views\\Jobs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home2\\Index.cshtml",
+      "TargetPath": "Views\\Home2\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_FeatureCatPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_FeatureCatPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\_LayoutDark.cshtml",
+      "TargetPath": "Views\\Home\\_LayoutDark.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_NavMenuPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_NavMenuPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Error.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\EditCompany.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EditCompany.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\_LayoutContestants.cshtml",
+      "TargetPath": "Views\\Contestants\\_LayoutContestants.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\Dashboard.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Jobs\\_Layout.cshtml",
+      "TargetPath": "Views\\Jobs\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_AdminNavbarPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_AdminNavbarPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categories\\Index.cshtml",
+      "TargetPath": "Views\\Categories\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\Delete.cshtml",
+      "TargetPath": "Views\\Contestants\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categories\\Create.cshtml",
+      "TargetPath": "Views\\Categories\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\Edit.cshtml",
+      "TargetPath": "Views\\Contestants\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_NavMenuPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_NavMenuPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Contestants\\Index.cshtml",
+      "TargetPath": "Views\\Contestants\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_JoinPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_JoinPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageFooter.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageFooter.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Errors.cshtml",
+      "TargetPath": "Views\\Client\\Errors.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categories\\Delete.cshtml",
+      "TargetPath": "Views\\Categories\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_BannerPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_BannerPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\EditContestantProfile.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EditContestantProfile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_FeaturesPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_FeaturesPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Jobs\\_LayoutAccount.cshtml",
+      "TargetPath": "Views\\Jobs\\_LayoutAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_BannerPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_BannerPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Partials\\_SliderPartial.cshtml",
+      "TargetPath": "Views\\Client\\Partials\\_SliderPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categories\\Edit.cshtml",
+      "TargetPath": "Views\\Categories\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_NavMenuPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_NavMenuPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\EditPost.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EditPost.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_JoinPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_JoinPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\EditProfile.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EditProfile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\JobPosts.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\JobPosts.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Client\\Index.cshtml",
+      "TargetPath": "Views\\Client\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Partials\\_FeatureCatPartial.cshtml",
+      "TargetPath": "Views\\Home\\Partials\\_FeatureCatPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Jobs\\Delete.cshtml",
+      "TargetPath": "Views\\Jobs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Errors.cshtml",
+      "TargetPath": "Views\\Home\\Errors.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

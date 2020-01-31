@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #383C77;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .wrapper
+
+{
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+    header
+
+{
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .profile-img
+
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+    img
+
+{
+    width: 100%;
+}
+
+}
+
+.profile-img-content {
+    width: 60px;
+    position: relative;
+    &:after
+
+{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: #00ff11;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+
+}
+
+h1 {
+    matgin-top: 30px;
+    margin-bottom: 0;
+    color: #898a8e;
+    font-weight: 500;
+}
+
+p {
+    color: #898a8e;
+    margin: 3px 0 0 0;
+    font-weight: 300;
+}
+
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 30px 50px 30px;
+    ;
+    div .line
+
+{
+    height: 30px;
+    background-color: #898a8e;
+    width: 2px;
+}
+
+div {
+    p
+
+{
+    margin: 0;
+    font-size: 13px;
+}
+
+p:first-child {
+    color: #898a8e;
+    font-weight: 300;
+}
+
+p:last-child {
+    color: #565555;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+}
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button
+
+{
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    &.follow
+
+{
+    background: linear-gradient(to right, #555eea, #CD84F4);
+    border-radius: 0 0 5px 0;
+}
+
+&.next {
+    background-color: #898a8e;
+    border-radius: 0 0 0 5px;
+}
+
+}
+}
+}
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        margin: 0 10px;
+        .main-content
+
+{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+}
+}

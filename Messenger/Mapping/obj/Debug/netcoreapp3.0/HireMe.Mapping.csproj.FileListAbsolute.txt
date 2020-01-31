@@ -1,0 +1,4 @@
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\bin\Debug\netcoreapp3.0\HireMe.Mapping.deps.json
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\bin\Debug\netcoreapp3.0\HireMe.Mapping.dll
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp3.0\HireMe.Mapping.AssemblyInfoInputs.cache
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp3.0\HireMe.Mapping.AssemblyInfo.cs

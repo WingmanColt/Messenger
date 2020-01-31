@@ -1,0 +1,78 @@
+﻿@using HireMe.Web.Areas.Identity.Pages.Messenger.Partials
+
+@model SearchModel
+
+@{
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    
+    //await Html.RenderPartialAsync("Search", Model.Sea);
+   
+}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="~/Messenger/css/autoComplate.css">
+<link rel="stylesheet" href="~/Messenger/css/dropDown.css">
+
+<div class="col-sm-6">
+    <label style="margin-right: 8px;" class="">
+        <div class="icheckbox_square-blue" style="position: relative;">
+            <input type="checkbox" id="check-all" class="icheck" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins>
+        </div>
+    </label>
+
+</div>
+<div class="col-md-6 search-form">
+    <form method="post" class="text-right">
+        <div class="input-group">
+            <input asp-for="@Model.searchString" class="form-control" id="AutoSearch" name="AutoSearch" autocomplete="off" />
+            <input asp-for="@Model.searchString" type="hidden" id="AutoSearchHidden" autocomplete="off" />
+
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary btn-fill pull-right">Search</button>
+            </span>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#AutoSearch").autocomplete({
+                source: function (request, response) {
+
+                    $.ajax({
+                        url: '/MessageApi/SearchMessage',
+                        type: 'GET',
+                        cache: false,
+                        data: request,
+                        dataType: 'json',
+                        success: function (data) {
+                            response($.map(data, function (item) {
+
+                                return {
+                                    label: item.title,
+                                    value: item.id,
+                                }
+                            }))
+                        }
+                    });
+                },
+                minLength: 2,
+
+                focus: function (event, ui) {
+                    $("#AutoSearch").val(ui.item.label);
+                    return false;
+                },
+
+                select: function (event, ui) {
+                    $('#AutoSearch').val(ui.item.label);
+                    $('#AutoSearchHidden').val(ui.item.value);
+                    return false;
+                }
+            })
+        });
+    </script>
+
+}

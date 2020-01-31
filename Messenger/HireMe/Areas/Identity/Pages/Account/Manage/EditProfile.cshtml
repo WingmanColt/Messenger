@@ -1,0 +1,148 @@
+﻿@page
+@model EditProfileModel
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+}
+
+<div class="wrapper">
+    <partial name="../Dashboard/_ManageSideBar" />
+
+    <div class="main-panel">
+        <partial name="../Dashboard/_ManageNav2" />
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <partial name="../Dashboard/_StatusMessage" for="StatusMessage" />
+
+                            <div class="header">
+                                <h4 class="title">Edit Profile</h4>
+                            </div>
+                            <div class="content">
+                                <form id="profile-form" method="post" enctype="multipart/form-data">
+                                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label asp-for="Picture"></label>
+                                                <img class="img-rounded img-responsive" src="~/account_panel/assets/img/default-avatar.png" height="100" width="100" />
+                                                <input type="file" asp-for="Picture" />
+                                                @*  <br><input id="file2" type="file" name="files" placeholder="Photo" required="">*@
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label asp-for="Username"></label>
+                                                <input asp-for="Username" class="form-control" disabled />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label asp-for="Input.Email"></label>
+                                                @if (Model.IsEmailConfirmed)
+                                                {
+                                                    <div class="input-group">
+                                                        <input asp-for="Input.Email" class="form-control" />
+                                                        <span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <input asp-for="Input.Email" class="form-control" />
+                                                }
+                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label asp-for="Input.FirstName"></label>
+                                                <input asp-for="Input.FirstName" class="form-control" enabled />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label asp-for="Input.LastName"></label>
+                                                <input asp-for="Input.LastName" class="form-control" enabled />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label asp-for="Input.PhoneNumber"></label>
+                                                <input asp-for="Input.PhoneNumber" class="form-control" />
+                                                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label asp-for="Input.Age"></label>
+                                                <input asp-for="Input.Age" class="form-control" enabled />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @if (!Model.IsEmailConfirmed)
+                                    {
+                                        <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>
+                                    }
+                                    <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+
+                                      @*  <img src="@Url.Content(String.Format("~/uploads/UserProfile/Pictures/{0}", ViewData["Picture"]))" alt="Loading..." />*@
+
+                                         <img class="avatar border-gray" src="~/@Model.Input.PictureName" alt="..." />
+
+                                        <h4 class="title">
+                                            @Model.Input.FirstName @Model.Input.LastName<br />
+                                            <small>@Model.Username</small>
+                                        </h4>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <partial name="../Dashboard/_ManageFooter" />
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+}
+

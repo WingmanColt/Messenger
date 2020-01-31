@@ -1,0 +1,8 @@
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\bin\Debug\netcoreapp2.2\Mapping.deps.json
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\bin\Debug\netcoreapp2.2\Mapping.dll
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\bin\Debug\netcoreapp2.2\Mapping.pdb
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\obj\Debug\netcoreapp2.2\Mapping.csprojAssemblyReference.cache
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\obj\Debug\netcoreapp2.2\Mapping.AssemblyInfoInputs.cache
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\obj\Debug\netcoreapp2.2\Mapping.AssemblyInfo.cs
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\obj\Debug\netcoreapp2.2\Mapping.dll
+C:\Users\iNexus\Documents\GitHub\Messenger\Messenger\Mapping\obj\Debug\netcoreapp2.2\Mapping.pdb

@@ -1,0 +1,16 @@
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\bin\Debug\netcoreapp2.2\HireMe.Mapping.deps.json
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\bin\Debug\netcoreapp2.2\HireMe.Mapping.dll
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\bin\Debug\netcoreapp2.2\HireMe.Mapping.pdb
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.csprojAssemblyReference.cache
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.AssemblyInfoInputs.cache
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.AssemblyInfo.cs
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.dll
+C:\Users\iNexus\Documents\source\repos\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.pdb
+C:\Users\iNexus\Desktop\HireMe\Mapping\bin\Debug\netcoreapp2.2\HireMe.Mapping.deps.json
+C:\Users\iNexus\Desktop\HireMe\Mapping\bin\Debug\netcoreapp2.2\HireMe.Mapping.dll
+C:\Users\iNexus\Desktop\HireMe\Mapping\bin\Debug\netcoreapp2.2\HireMe.Mapping.pdb
+C:\Users\iNexus\Desktop\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.csprojAssemblyReference.cache
+C:\Users\iNexus\Desktop\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.AssemblyInfoInputs.cache
+C:\Users\iNexus\Desktop\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.AssemblyInfo.cs
+C:\Users\iNexus\Desktop\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.dll
+C:\Users\iNexus\Desktop\HireMe\Mapping\obj\Debug\netcoreapp2.2\HireMe.Mapping.pdb

@@ -1,0 +1,55 @@
+﻿@page
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Personal Data";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+}
+<div class="wrapper">
+    <partial name="../Dashboard/_ManageSideBar" />
+
+    <div class="main-panel">
+        <partial name="../Dashboard/_ManageNav2" />
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Personal Data</h4>
+                            </div>
+
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
+                                        <p>
+                                            <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
+                                        </p>
+
+                                        <form asp-page="DownloadPersonalData" method="post" class="form-group">
+                                            <button class="btn btn-default" type="submit">Download</button>
+                                        </form>
+
+                                        <p>
+                                            <a asp-page="DeletePersonalData" class="btn btn-default">Delete</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <partial name="../Dashboard/_ManageFooter" />
+
+
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

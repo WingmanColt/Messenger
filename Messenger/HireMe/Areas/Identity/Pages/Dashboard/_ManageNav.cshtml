@@ -1,0 +1,47 @@
+﻿@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+
+    var poster = UserManager.GetUserId(User);
+}
+
+
+<ul class="nav">
+    <li class="active">
+        <a asp-page="/Messenger/Index">
+            <i class="pe-7s-graph"></i>
+            <p>Dashboard</p>
+        </a>
+    </li>
+    <li>
+        <a asp-page="/Account/Manage/EditProfile">
+            <i class="pe-7s-user"></i>
+            <p>Account Settings</p>
+        </a>
+    </li>
+    <li>
+        <a asp-page="/Account/Manage/ChangePassword">
+            <i class="pe-7s-key"></i>
+            <p>Change Password</p>
+        </a>
+    </li>
+       
+<li>
+        <a asp-page="/Account/register">
+            <i class="pe-7s-edit"></i>
+            <p>Register</p>
+        </a>
+</li>
+    
+        <li>
+            <a asp-page="/Account/login">
+                <i class="pe-7s-note2"></i>
+                <p>Login</p>
+            </a>
+        </li>
+    
+
+</ul>

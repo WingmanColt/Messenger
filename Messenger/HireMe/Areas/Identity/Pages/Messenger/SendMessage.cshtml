@@ -1,0 +1,142 @@
+﻿@page
+
+@model SendMessageModel
+
+@{
+    ViewData["Title"] = "Messanger";
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="~/Messenger/css/autoComplate.css">
+
+<div class="wrapper">
+    <partial name="../Dashboard/_ManageSideBar" />
+
+    <div class="main-panel">
+        <partial name="../Dashboard/_ManageNav2" />
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <partial name="./Dashboard/_StatusMessage" for="StatusMessage" />
+
+                                <h4 class="title">Messenger</h4>
+                            </div>
+                            <div class="content">
+                                <form method="post">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                             <b>Receiver Name</b>
+                                                <input asp-for="Message.ReceiverId" class="form-control" id="AutoComplete" name="AutoComplete" autocomplete="off" />
+                                                <input asp-for="Message.ReceiverId" type="hidden" id="AutoCompleteHidden" autocomplete="off" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div asp-validation-summary="All" class="text-danger"></div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label asp-for="Message.Title"></label>
+                                                <input asp-for="Message.Title" class="form-control" />
+                                                <span asp-validation-for="Message.Title" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label asp-for="Message.Description"></label>
+                                                <textarea asp-for="Message.Description" rows="5" cols="40" id="mytextarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-fill pull-right">Send message</button>
+                                    <div class="clearfix"></div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <partial name="../Dashboard/_ManageFooter" />
+
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            icons: 'material',
+            height: 400,
+            width: 900
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#AutoComplete").autocomplete({
+                source: function (request, response) {
+
+                    $.ajax({
+                        url: '/MessageApi/Search',
+                        type: 'GET',
+                        cache: false,
+                        data: request,
+                        dataType: 'json',
+                        success: function (data) {
+                            response($.map(data, function (item) {
+
+                                return {
+                                    label: item.firstname + ' ' + item.lastname + ' ',
+                                    value: item.id,
+                                    image: item.picture,
+                                    siteurl: item.siteurl
+                                }
+                            }))
+                        }
+                    });
+                },
+                minLength: 2,
+
+                focus: function (event, ui) {
+                    $("#AutoComplete").val(ui.item.label);
+                    return false;
+                },
+
+                select: function (event, ui) {
+                    $('#AutoComplete').val(ui.item.label);
+                    $('#AutoCompleteHidden').val(ui.item.value);
+                    return false;
+                }
+            }).data("ui-autocomplete")._renderItem = function (ul, item) {
+
+
+                var $div = $("<div></div>");
+                var image = item.siteurl + item.image;
+                console.log(item.siteurl)
+                $("<img style='height:76px;'>").attr("src", image).appendTo($div);
+                $("<span></span>").text(item.label).appendTo($div);
+
+                return $("<li></li>").append($div).appendTo(ul);
+            };
+
+        });
+    </script>
+
+}

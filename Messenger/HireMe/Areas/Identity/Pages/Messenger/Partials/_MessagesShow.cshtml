@@ -1,0 +1,104 @@
+﻿@using HireMe.Services.Interfaces
+
+@inject IMessageService _messageService
+@inject UserManager<User> UserManager
+
+@model IEnumerable<MessageStaredModel>
+
+@{
+    var posterId = UserManager.GetUserId(User);
+}
+
+<div class="table-responsive">
+    <table class="table">
+        <tbody>
+            @{
+                int i = 0;
+                foreach (var item in Model /*this._messageService.GetAllMessagesBy_Receiver(posterId, 10)*/)
+                {
+                    @*if (!item.isStared)
+                        return;
+
+                    var user = await UserManager.FindByIdAsync(item.ReceiverId);
+
+                    <tr>
+
+                        <td class="action">
+                            <a asp-controller="MessageApi" asp-action="AddToStared" asp-route-id="@item.Id">
+                                @if (item.isStared)
+                                {
+                                    <i class="fa fa-star"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa fa-star-o"></i>
+                                }
+                            </a>
+                        </td>
+
+
+                        @if (!item.isRead)
+                        {
+                            <td class="name"><a asp-controller="MessageApi" asp-action="AddToReaded" asp-route-id="@item.Id"><strong>@user.FirstName @user.LastName</strong></a></td>
+                            <td class="subject"><a asp-controller="MessageApi" asp-action="AddToReaded" asp-route-id="@item.Id"><strong>@item.Title</strong></a></td>
+                            <td class="time"><strong>@item.dateTime</strong></td>
+                        }
+                        else
+                        {
+                            <td class="name"><a asp-controller="MessageApi" asp-action="AddToReaded" asp-route-id="@item.Id">@user.FirstName @user.LastName</a></td>
+                            <td class="subject"><a asp-controller="MessageApi" asp-action="AddToReaded" asp-route-id="@item.Id">@item.Title</a></td>
+                            <td class="time">@item.dateTime</td>
+                        }
+
+                    </tr>
+                    if (i % 3 == 2)
+                    {
+                        <br />
+                    }
+                    i++;*@
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+
+    var pageSize = 12;
+    var pageIndex = 1;
+
+    $(document).ready(function () {
+        GetData();
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() ==
+               $(document).height() - $(window).height()) {
+                GetData();
+            }
+        });
+    });
+
+function GetData() {
+            $.ajax({
+                type: 'GET',
+                url: '/MessageApi/GetData',
+                data: { "pageindex": pageIndex, "pagesize": pageSize },
+                //dataType: 'json', //Because the GetData now return the partialview content instead if json result
+                success: function (data) {
+                    if (data != null) {
+                        $("#container").append(data);
+                        pageIndex++;
+                    }
+                },
+                beforeSend: function () {
+                    $("#progress").show();
+                },
+                complete: function () {
+                    $("#progress").hide();
+                },
+                error: function () {
+                    alert("Error while retrieving data!");
+                }
+            });
+        }
+</script>  

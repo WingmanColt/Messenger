@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "HireMe\\.vs": true,
+    "HireMe\\bin": true,
+    "HireMe\\obj": true,
+    "HireMe\\Properties": true,
+    ".vscode": true,
+    ".vs": true
+  }
+}
