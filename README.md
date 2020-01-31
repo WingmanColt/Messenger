@@ -1,5 +1,5 @@
 # Messenger
-.Net Core 3.1 Messenger without using SignalR.
+.Net Core 3.1 Razor Pages Messenger without using SignalR.
 
 1. Insert db_for_MSSQL.dtsx to Microsoft SQL Server Management Studio 18.
 2. Open appsettings.json in HireMe folder and change "DefaultConnection", "SiteUrl" and "ProjectRootDir"
