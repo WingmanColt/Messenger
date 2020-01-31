@@ -5,7 +5,8 @@
 2. Open appsettings.json in HireMe folder and change "DefaultConnection", "SiteUrl" and "ProjectRootDir"
 3. Build project
 4. There are 2 registered users with name and picture (requiered from search system) 
-
+-- user1: supp.bgsell@gmail.com (pass: bass123)
+-- user2: supp.bgsell2@gmail.com (pass: bass123)
 
 ------------------------------------------------------------------
 
